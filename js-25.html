@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Java script 25</title>
+	<script type="text/javascript">
+	function divolustur()
+		{
+		document.getElementById("kutu").style.width=document.getElementById("genislik").value+"px";
+		document.getElementById("kutu").style.height=document.getElementById("yukseklik").value+"px";
+		document.getElementById("kutu").style.borderWidth=document.getElementById("kenkal").value;
+		document.getElementById("kutu").style.borderStyle=document.getElementById("kentip").value;
+		document.getElementById("kutu").style.borderColor=document.getElementById("kenrenk").value;
+		document.getElementById("kutu").style.backgroundColor=document.getElementById("arkpln").value;
+		document.getElementById("kutu").style.borderRadius=document.getElementById("ovallik").value;
+		}
+	
+	</script>
+</head>
+<body>
+	<form action="" method="get">
+<table>
+  <tbody>
+    <tr>
+      <td width="200px" height="30px">genişlik</td>
+      <td width="300px"><input id="genislik" type="text"></td>
+    </tr>
+    <tr>
+      <td height="30px">yükseklik</td>
+      <td><input id="yukseklik" type="text"></td>
+    </tr>
+    <tr>
+      <td height="30px">Kenar kalınlığı</td>
+      <td><select id="kenkal">
+		  <option>Bir çizgi kalınlığı seçiniz</option>
+		  <option value="1px">1px</option>
+		  <option value="2px">2px</option>
+	      <option value="3px">3px</option>
+		  <option value="4px">4px</option>
+		  <option value="5px">5px</option>
+		  </select></td>
+    </tr>
+    <tr>
+      <td height="30px">kenarlık tipi</td>
+      <td><select id="kentip">
+		  <option>Bir kenarlık tipi seçiniz</option>
+		  <option value="solid">solid</option>
+		  <option value="dashed">dashed</option>
+		  <option value="dotted">dotted</option>
+		  <option value="double">double</option>
+		  </select></td>
+    </tr>
+    <tr>
+      <td height="30px">kenarlık rengi</td>
+      <td><select id="kenrenk">
+		  <option>Bir kenarlık rengi seçiniz</option>
+		  <option value="#ff0a0a">kırımızı</option>
+		  <option value="#fffa00">sarı</option>
+		  <option value="#ff7f00">turuncu</option>
+		  <option value="#0021ff">mavi</option>
+		  </select></td>
+    </tr>
+    <tr>
+      <td height="30px">arkaplan renk</td>
+      <td><select id="arkpln"> <option>Bir renk seçiniz</option>
+		  <option value="#ff0a0a">kırımızı</option>
+		  <option value="#fffa00">sarı</option>
+		  <option value="#ff7f00">turuncu</option>
+		  <option value="#0021ff">mavi</option>
+		  </select></td>
+    </tr>
+    <tr>
+      <td height="30px">ovallik</td>
+      <td><select id="ovallik"> 
+		  <option>Ovallik</option>
+		  <option value="3px">3px</option>
+		  <option value="5px">5px</option>
+	      <option value="7px">7px</option>
+		  </select></td>
+    </tr>
+    <tr>
+      <td height="30px"></td>
+      <td><input type="button" value="Oluştur" onClick="divolustur()"></td>
+    </tr>
+  </tbody>
+</table>
+</form>
+<br/><br/><br/>
+<div id="kutu"></div>	
+	
+</body>
+</html>
